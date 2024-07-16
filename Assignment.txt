@@ -1,0 +1,67 @@
+Question 1:
+
+#include<stdio.h>
+
+int main(){
+	int n = 6;
+	
+	for(int row=0; row < n; row++){
+		for(int col=0; col < row + 1; col++){
+			printf("%d", (col + 1) * (col + 1));
+		}
+		printf("\n");
+	}
+	
+	return 0;
+}
+
+Question 2:
+
+#include<stdio.h>
+
+int main(){
+	int num;
+	
+	printf("Enter the positive integer to find it's factors: ");
+	scanf("%d",num);
+	
+	printf("\n");
+
+	printf("The factors are: ");
+
+	printf("\n");
+
+
+	for(int i=1; i <= num; i++){
+		if(num%i == 0){
+			printf("%d ",i);
+		}
+	} 
+	
+	return 0;
+}
+
+Question 3:
+
+#include<stdio.h>
+
+int main(){
+	int n = 4;
+	int count; 
+	for(int row=0; row < n; row++){
+		count = 1;
+		for(int col=0; col < (2 * row) + 1; col++){
+			if(col > row){
+				printf("%d ", ((row + col) - (2 * count - 1)));
+				count++;
+			}
+			else{
+				printf("%d ", ((row + col) + 1));
+			}		
+		}
+		printf("\n");
+	}
+
+	return 0;
+}
+
